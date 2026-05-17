@@ -20,6 +20,10 @@ A Telegram bot delivering structured and up-to-date Formula 1 data through an in
 
 ---
 
+Comprehensive documentation and deployment guides are provided in the individual README files of each project.
+
+---
+
 ⚙️ Core Skills Demonstrated
 
 Backend API development (Django REST Framework)
