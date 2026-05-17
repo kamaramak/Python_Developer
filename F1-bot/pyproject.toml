@@ -1,0 +1,28 @@
+[tool.isort]
+src_paths = ['bot']
+skip = ["venv", "env", ".venv", ".env", "__pycache__"]
+profile = "black"
+
+[tool.black]
+line-length=79
+include = 'bot/.*\.pyi?$'
+extend-exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.nox
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | venv
+  | env
+)/
+'''
+force-exclude = '''
+^/(?!bot)  # Исключаем всё, что не начинается с bot/
+'''
