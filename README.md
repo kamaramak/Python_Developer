@@ -41,7 +41,9 @@ Deployment (Railway, Nginx)
 👨‍💻 About Me
 
 Marat Kabardokov
-📬 Email: kabardokov.m@yandex.ru
+📬Email:    kabardokov.m@yandex.ru
+📬Telegram: t.me/kamar_kamar
+📬VK:       https://vk.com/k4mar_kam4r
 
 ---
 
