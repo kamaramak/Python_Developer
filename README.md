@@ -13,22 +13,22 @@
 
 Django + DRF + PostgreSQL + Docker
 
-Сервис для публикации рецептов, подписок на авторов и формирования списка покупок.
+A backend-driven recipe sharing platform that enables users to publish recipes, follow other authors, and generate consolidated shopping lists.
 
 🔗 Live: https://kamar-foodgram.ddns.net
 🔗 API Docs: https://kamaramak.github.io/foodgram_docs/
 
 ✨ Features:
 
-CRUD рецептов
+- Recipe CRUD (Create, Read, Update, Delete)
 
-Подписки на авторов
+- Follow/subscribe to authors
 
-Избранное
+- Favorites system
 
-Список покупок + экспорт .txt
+- Shopping list generation + export to .txt
 
-Админ-панель Django
+- Django admin panel
 
 
 🛠 Stack: Django, DRF, PostgreSQL, Docker, Nginx
@@ -40,21 +40,21 @@ CRUD рецептов
 
 Python + Aiogram + Async + Web Scraping
 
-Telegram-бот с актуальными данными Формулы-1.
+A Telegram bot delivering structured and up-to-date Formula 1 data through an interactive interface.
 
 📡 Data source: https://f1api.dev/
 
 ✨ Features:
 
-Календарь гонок (1950–now)
+- Race calendar (1950–now)
 
-Турнирные таблицы (пилоты / конструкторы)
+- Drivers and constructors standings
 
-Пагинация и навигация
+- Pagination and navigation system
 
-Перевод стран и городов
+- Country and city name localization (translation)
 
-Удобное меню в Telegram
+- User-friendly Telegram menu navigation
 
 
 🛠 Stack: Aiogram 3, aiohttp, BeautifulSoup4, googletrans, asyncio
