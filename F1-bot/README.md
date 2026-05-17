@@ -19,8 +19,8 @@ Telegram бот для просмотра календаря гонок Форм
 
 - Python 3.12+
 - aiogram 3.x
-- aiohttp
-- BeautifulSoup4
+- asyncio
+- third-party API (f1api.dev)
 - googletrans
 - emoji
 
