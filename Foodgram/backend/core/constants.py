@@ -1,0 +1,18 @@
+"""Константы, используемые в проекте."""
+
+USER = "user"
+ADMIN = "admin"
+ROLE_CHOICES = (
+    (USER, "Пользователь"),
+    (ADMIN, "Администратор"),
+)
+MAX_ROLE_LENGTH = max(len(role) for role, _ in ROLE_CHOICES)
+MAX_RECIPE_NAME_LENGTH = 256
+MAX_INGREDIENT_NAME_LENGTH = 64
+MAX_INGREDIENT_MEASUREMENT_UNIT_LENGTH = 16
+MAX_TAG_NAME_LENGTH = 64
+MAX_TAG_SLUG_LENGTH = 50
+MAX_HASH_LENGTH = 5
+MAX_EMAIL_LENGTH = 254
+MAX_FIRST_NAME_LENGTH = 150
+MAX_LAST_NAME_LENGTH = 150

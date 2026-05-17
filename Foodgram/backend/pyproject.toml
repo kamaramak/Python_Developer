@@ -1,0 +1,68 @@
+[tool.black]
+line-length = 79
+target-version = ['py312']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # Django миграции
+  | migrations
+  
+  # Виртуальные окружения
+  | \.venv
+  | \.env
+  | env
+  | venv
+  
+  # Системные папки
+  | \.git
+  | \.eggs
+  | build
+  | dist
+  
+  # Кэши
+  | \.mypy_cache
+  | \.pytest_cache
+  | __pycache__
+  
+  # Статические файлы
+  | static
+  | media
+  
+  # Другие исключения
+  | templates
+)/
+'''
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = [
+    "R0901",  # Too many ancestors
+    "E5110", # Django was not configured
+    "W0613", # Unused argument
+]
+
+[tool.pylint.'MASTER']
+load-plugins = ["pylint_django"]
+ignore = [
+    "env",
+    "manage.py",
+    "settings.py",
+    "*/env/*",
+    "**/env/**",
+    "venv",
+    ".venv",
+    "migrations",
+    "*/migrations/*",
+    "__pycache__",
+    "*/__pycache__/*",
+]
+
+[tool.isort]
+skip = [
+    "env",
+    "venv", 
+    ".venv",
+    ".env",
+    "__pycache__",
+    "migrations",
+    "*.sqlite3",
+]
