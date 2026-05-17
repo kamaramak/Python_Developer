@@ -1,0 +1,29 @@
+volumes:
+  static:
+  media:
+  postgres_data:
+
+services:
+  db:
+    image: postgres:14
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  backend:
+    build: ./backend/
+    env_file: .env
+    volumes:
+      - static:/backend_static
+  frontend:
+    build: ./frontend/
+    env_file: .env
+    command: cp -r /app/build/. /frontend_static/
+    volumes:
+      - static:/frontend_static
+  gateway:
+    build: ./gateway/
+    volumes:
+      - static:/staticfiles
+    ports:
+      - 8000:80

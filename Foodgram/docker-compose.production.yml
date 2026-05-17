@@ -1,0 +1,36 @@
+volumes:
+  static:
+  media:
+  postgres_data:
+
+services:
+  db:
+    image: postgres:14
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  backend:
+    image: kamaramak/foodgram_backend
+    env_file: .env
+    depends_on:
+      - db
+    volumes:
+      - static:/backend_static
+      - media:/app/media
+  frontend:
+    image: kamaramak/foodgram_frontend
+    env_file: .env
+    command: cp -r /app/build/. /static/
+    volumes:
+      - static:/static
+  gateway:
+    image: kamaramak/foodgram_gateway
+    env_file: .env
+    depends_on:
+      - backend
+    volumes:
+      - static:/static
+      - media:/app/media
+    ports:
+      - 8000:80
