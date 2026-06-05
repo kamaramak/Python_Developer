@@ -18,6 +18,16 @@ A backend system for a fictional charity fund that collects donations to support
 
 ---
 
+✂️ YaCut — URL Shortener Service
+
+A service that generates short links from long URLs and uploaded files. Supports both web interface and REST API.
+
+✨ Features: custom short links; file upload with short link generation for each file; REST API for link creation and redirection; database migrations (Flask-Migrate).
+
+🛠 Stack: Flask, Python 3.12, SQLite, Flask-Migrate, python-doten
+
+---
+
 🏎️ F1 Telegram Bot
 
 A Telegram bot delivering structured and up-to-date Formula 1 data through an interactive interface.
