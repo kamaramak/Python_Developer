@@ -8,6 +8,16 @@ A backend-driven recipe sharing platform that enables users to publish recipes, 
 
 ---
 
+🐱 QRKot — Charity Donation Platform (FastAPI)
+
+A backend system for a fictional charity fund that collects donations to support cats in need. Built entirely on FastAPI with asynchronous architecture.
+
+✨ Features: donation creation and management (open/closed projects); project goal tracking with automatic closure when target is reached; automatic donation distribution logic; JWT authentication for users and admins; background tasks for fund allocation; fully async API (FastAPI + SQLAlchemy async)
+
+🛠 Stack: FastAPI, Python 3, SQLAlchemy, Pydantic, Alembic, Uvicorn, JWT authentication
+
+---
+
 🏎️ F1 Telegram Bot
 
 A Telegram bot delivering structured and up-to-date Formula 1 data through an interactive interface.
@@ -17,16 +27,6 @@ A Telegram bot delivering structured and up-to-date Formula 1 data through an in
 ✨ Features: race calendar (1950–now); drivers and constructors standings; pagination and navigation system; country and city name localization (translation); user-friendly Telegram menu navigation.
 
 🛠 Stack: Python 3, Aiogram 3, asyncio, third-party API (f1api.dev), googletrans, asyncio
-
----
-
-🐱 QRKot — Charity Donation Platform (FastAPI)
-
-A backend system for a fictional charity fund that collects donations to support cats in need. Built entirely on FastAPI with asynchronous architecture.
-
-✨ Features: donation creation and management (open/closed projects); project goal tracking with automatic closure when target is reached; automatic donation distribution logic; JWT authentication for users and admins; background tasks for fund allocation; fully async API (FastAPI + SQLAlchemy async)
-
-🛠 Stack: FastAPI, Python 3, SQLAlchemy, Pydantic, Alembic, Uvicorn, JWT authentication
 
 ---
 
