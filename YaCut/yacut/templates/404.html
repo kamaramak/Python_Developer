@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: fadeIn 0.8s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 900;
+            margin: 0;
+            text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+            line-height: 1;
+            color: #fef2f2;
+        }
+        
+        .error-title {
+            font-size: 32px;
+            margin: 20px 0 10px;
+            font-weight: 300;
+            color: #fecaca;
+        }
+        
+        .error-message {
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            color: #fca5a5;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .icon-container {
+            margin: 30px 0;
+            position: relative;
+            height: 120px;
+        }
+        
+        .broken-link {
+            font-size: 80px;
+            animation: shake 3s ease-in-out infinite;
+            display: inline-block;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+        }
+        
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 40px;
+            background: white;
+            color: #dc2626;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            background: #fef2f2;
+        }
+        
+        .btn-home:active {
+            transform: translateY(-1px);
+        }
+        
+        .btn-home span {
+            font-size: 24px;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0) rotate(0deg);
+            }
+            2%, 6%, 10%, 14%, 18% {
+                transform: translateX(-5px) rotate(-2deg);
+            }
+            4%, 8%, 12%, 16%, 20% {
+                transform: translateX(5px) rotate(2deg);
+            }
+            22% {
+                transform: translateX(0) rotate(0deg);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .error-code {
+                font-size: 80px;
+            }
+            
+            .error-title {
+                font-size: 24px;
+            }
+            
+            .error-message {
+                font-size: 16px;
+            }
+            
+            .broken-link {
+                font-size: 60px;
+            }
+            
+            .btn-home {
+                padding: 14px 32px;
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 60px;
+            }
+            
+            .error-title {
+                font-size: 20px;
+            }
+            
+            .broken-link {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Страница не найдена</h2>
+        
+        <div class="icon-container">
+            <div class="broken-link">🔗</div>
+        </div>
+        
+        <p class="error-message">
+            Запрашиваемая страница не существует или была перемещена.<br>
+            Проверьте правильность адреса или вернитесь на главную.
+        </p>
+        
+        <a href="/" class="btn-home">
+            <span>🏠</span> Вернуться на главную
+        </a>
+    </div>
+</body>
+</html>
