@@ -36,19 +36,14 @@ Comprehensive documentation and deployment guides are provided in the individual
 
 ⚙️ Core Skills Demonstrated
 
-Backend API development (Django REST Framework)
-
-Asynchronous Python (asyncio, Aiogram)
-
+Backend API development (Django REST Framework, FastAPI)
+Asynchronous Python (FastAPI, SQLAlchemy async, Aiogram)
 Working with external APIs
-
 Web scraping & data parsing
-
-Database design (PostgreSQL)
-
+Database design (PostgreSQL, SQLite)
 Containerization (Docker / Docker Compose)
-
-Deployment (Railway, Nginx)
+Deployment (Railway, Nginx, Uvicorn)
+JWT authentication & role-based access
 
 ---
 
