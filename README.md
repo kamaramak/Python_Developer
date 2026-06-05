@@ -20,6 +20,16 @@ A Telegram bot delivering structured and up-to-date Formula 1 data through an in
 
 ---
 
+🐱 QRKot — Charity Donation Platform (FastAPI)
+
+A backend system for a fictional charity fund that collects donations to support cats in need: food, medical care, shelters, and other cat-related causes.
+
+✨ Features: donation creation and management; project goal tracking; user authentication (JWT); automatic donation distribution logic; background tasks for fund allocation; fully asynchronous API.
+
+🛠 Stack: FastAPI, Python 3, SQLAlchemy, Pydantic, Alembic, Uvicorn, JWT authentication
+
+---
+
 Comprehensive documentation and deployment guides are provided in the individual README files of each project.
 
 ---
